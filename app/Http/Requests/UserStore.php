@@ -22,14 +22,14 @@ class UserStore extends FormRequest
     public function rules(): array
     {
         return [
-            'name' => 'required|string|max:255',
-            'email' => 'required|email|unique:userinfos,email|max:255',
-            'birth_date' => 'required|date|before_or_equal:today',
-            'phone' => 'required|string|regex:/^[0-9]{10}$/',
-            'qualification' => 'required|string|max:255',
-            'gender' => 'required|in:male,female',
-            'address' => 'required|string|max:255',
-            'image' => 'required|image|max:2048',
+            // 'name' => 'required|string|max:255',
+            // 'email' => 'required|email|unique:userinfos,email|max:255',
+            // 'birth_date' => 'required|date|before_or_equal:today',
+            // 'phone' => 'required|string|regex:/^[0-9]{10}$/',
+            // 'qualification' => 'required|string|max:255',
+            // 'gender' => 'required|in:male,female',
+            // 'address' => 'required|string|max:255',
+            'image' => 'required|mimes:xls,xlsx',
         ];
     }
 }

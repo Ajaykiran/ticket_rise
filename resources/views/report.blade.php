@@ -177,7 +177,6 @@ hr {
                                     <label for="address">Address</label>
                                     <textarea name="address" id="address" class="form-control"></textarea>
                                 </div>
-
                                 <div class="form-group">
                                     <label for="image">Upload Profile Picture:</label>
                                     <input type="file" name="image" id="image" accept="image/*">

@@ -32,77 +32,7 @@
                     <div class=" modal-header">
                         <div class="modal-body">
                             <h4 class="modal-title" id="title"></h4>
-                            <form>
-                                @csrf
-                                <input type="hidden" name="id" id="id">
-                                <input type="hidden" name="image_name" id="image_name">
-                                <div class="form-group">
-                                    <label for="name">Name</label>
-                                    <input type="text" class="form-control" id="name" name="name"
-                                        placeholder="Enter name">
-                                    <!-- <span class="error">
-                                        your name is mssing
-                                    </span> -->
-                                </div>
-
-                                <div class="form-group">
-                                    <label for="name">Email</label>
-                                    <input type="email" class="form-control" id="email" name="email"
-                                        placeholder="Enter email">
-                                    <small id="emailvalid">Your email must be a valid email</small>
-                                    <!-- <span class="error">
-                                        your email is missing
-                                    </span> -->
-                                </div>
-
-
-                                <div class="form-group">
-                                    <label for="date_of_birth">Date Of Birth</label>
-                                    <input type="date" class="form-control" name="date_of_birth" id="date_of_birth"
-                                        max="<?php echo date("Y-m-d"); ?>">
-                                </div>
-
-                                <div class="form-group">
-                                    <label for="phone">Contact</label>
-                                    <input type="tel" name="phone" id="phone" class="form-control" autocomplete="off"
-                                        maxlength="10" required>
-                                </div>
-
-                                <div class="form-group">
-                                    <label for="qualification">Qualification</label>
-                                    <select name="qualification" class="form-control" id="qualification">
-                                        <option></option>
-                                        <option value="b.tech">B.TECH</option>
-                                        <option value="MBA">MBA</option>
-                                        <option value="BSC">BSC</option>
-                                        <option value="BCA">BCA</option>
-                                    </select>
-                                </div>
-
-                                <div class="form-group">
-                                    <label>Gender:</label>
-                                    <input type="radio" name="gender" value="male" id="gender" style="margin-left:5%;">
-                                    <label for="male">Male</label>
-                                    <input type="radio" name="gender" value="female" id="gender"
-                                        style="margin-left:5%;">
-                                    <label for="female">Female</label>
-                                </div>
-
-                                <div class="form-group">
-                                    <label for="address">Address</label>
-                                    <textarea name="address" id="address" class="form-control"></textarea>
-                                </div>
-
-                                <div class="form-group">
-                                    <label for="image">Upload Profile Picture:</label>
-                                    <input type="file" name="image" id="image" accept="image/*">
-                                    <div class="mt-2" id="image_name1"></div>
-                                </div>
-                                <div class="form-group">
-                                    <button type="submit" id="update" class="btn btn-primary"
-                                        style="float: right;">update</button>
-                                </div>
-                            </form>
+                        
                         </div>
                     </div>
                 </div>
